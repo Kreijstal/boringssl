@@ -48,6 +48,9 @@ OPENSSL_EXPORT const EVP_MD *EVP_blake2b256(void);
 // MD5 and SHA-1, as used in TLS 1.1 and below.
 OPENSSL_EXPORT const EVP_MD *EVP_md5_sha1(void);
 
+// EVP_ripemd160 is in decrepit and not available by default.
+OPENSSL_EXPORT const EVP_MD *EVP_ripemd160(void);
+
 // SHA-3 family of digest functions.
 //
 // WARNING: Prefer to use SHA-2 (e.g. `EVP_sha256`) over SHA-3. Despite being a
