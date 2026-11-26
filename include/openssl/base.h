@@ -28,6 +28,7 @@
 #if defined(__MINGW32__)
 // stdio.h is needed on MinGW for __MINGW_PRINTF_FORMAT.
 #include <stdio.h>
+#undef X509_NAME
 #endif
 
 #if defined(__APPLE__)
