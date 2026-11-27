@@ -29,6 +29,8 @@
 // stdio.h is needed on MinGW for __MINGW_PRINTF_FORMAT.
 #include <stdio.h>
 #undef X509_NAME
+#undef X509_EXTENSIONS
+#undef PKCS7_SIGNER_INFO
 #endif
 
 #if defined(__APPLE__)
